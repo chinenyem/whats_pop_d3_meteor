@@ -20,5 +20,8 @@ I used d3 collision detection feature here. I wanted to create a creative visual
 I decided to deploy to galaxy. For meteor it is easy to deploy to, scalable, and provides tons of metrics. 
 
 Future work:
-make site more user friendly better responsiveness
+make site is more user friendly,
+better responsiveness, UI
 build out profile page
+add more features for metrics on social media
+improve branding
