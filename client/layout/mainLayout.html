@@ -1,0 +1,33 @@
+<template name="MainLayout">
+  {{#if currentUser  }}
+    {{> MainHeader}}
+  {{/if}}
+  <main div class="main-layout row">
+    <div class="col-lg-12">
+      <div class="main-wrapper">
+        <div id="main">
+          <div id="video-container">
+            <video></video>
+            <div id="video_cover">
+            </div>
+            <div id="overlay"></div>
+            <div id="content">
+              <h1 class="title">What is Popular On Social Media?</h1>
+              <h1 class="title_second">A Data Visualization.</h1>
+              <ul>
+                {{#if currentUser  }}
+                <li class="content_button"><a href="/search">Search Social Media</a></li>
+                {{else}}
+                <li class="content_button"><a href="/signUp">Create A Profile</a></li>
+                <li class="content_button sign_in"><a href="">Sign In</a></li>
+                {{/if}}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</template>
+
+

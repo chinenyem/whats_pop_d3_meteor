@@ -1,0 +1,27 @@
+<template name="SignUp">
+	{{#if currentUser  }}
+    	{{> MainHeader}}
+  	{{/if}}
+	<div class="row" id="content_profile">
+		<h4 id="profile_title">Create A Profile</h4>
+		<div class="col-md-12">
+			<div class="form-group">
+                <label class="profile_label" for="exampleInputEmail1">Username (required)</label>
+                <input type="email" class="form-control profile_input" id="username" placeholder="any name will do">
+           	</div>
+          	<div class="form-group">
+                <label class="profile_label" for="exampleInputEmail1">Email address (required)</label>
+                <input type="email" class="form-control profile_input" id="email" placeholder="Email">
+            </div>
+	         <div class="form-group">
+	                <label class="profile_label" for="exampleInputPassword1">Password (required)</label>
+	                <input type="password" class="form-control profile_input" id="password" placeholder="Password">
+	        </div>
+	         <div class="form-group">
+                <label class="profile_label" for="exampleInputEmail1">What are your top likes in social media? (optional)</label>
+                <textarea class="form-control profile_input" rows="5" id="likes" placeholder="Describe yourself here..."> </textarea>
+            </div>
+		</div>
+		<button type="submit" class="btn btn-default create_account">Create Profile</button>
+	</div>
+</template>
